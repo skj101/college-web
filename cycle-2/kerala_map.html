@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
-<body>
-
-<h1>The map and area elements</h1>
-
-<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
-
-<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
-<map name="workmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-</map>
-
-</body>
+<html lang="en">
+  <head>
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <meta charset="utf-8 /">
+    <title>Kerala</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Kerala</h1>
+    <br />
+    <img src="./assets/kerala.jpg" usemap="#image-map" draggable="false">
+    <map name="image-map">
+      <area target="_blank" alt="Kasargod" title="Kasargod" href="https://en.wikipedia.org/wiki/Kasaragod_district" coords="29,0,102,70,53,102,10,10" shape="poly">
+      <area target="_blank" alt="Kannur" title="Kannur" href="https://en.wikipedia.org/wiki/Kannur_District" coords="63,105,122,172,172,140,103,81" shape="poly">
+      <area target="_blank" alt="Wayanad" title="Wayanad" href="https://en.wikipedia.org/wiki/Wayanad_district" coords="161,164,178,139,222,152,257,189,211,218" shape="poly">
+      <area target="_blank" alt="Kozhikode" title="Kozhikode" href="https://en.wikipedia.org/wiki/Kozhikode_district" coords="125,183,158,257,209,223,153,167" shape="poly">
+    </map>
+  </body>
 </html>
