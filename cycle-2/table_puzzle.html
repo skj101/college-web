@@ -1,27 +1,59 @@
-<html>
-  <head>
-    <style type="text/css">
-      td { width:30px; height: 30px; text-align: center; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .center-row {
+            height: 150px;
+        }
+        .center-col {
+            width: 33.33%;
+        }
+        .middle-up {
+            height: 50%;
+        }
+        .middle-down {
+            height: 50%;
+        }
     </style>
-  </head>
-  <body>
-    <table border=1>
-      <tr>
-        <td colspan=2>12</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td colspan=2 rowspan=2>56<br/>89</td>
-      </tr>
-      <tr>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-      </tr>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5">Top</th>
+        </tr>
+        <tr class="center-row">
+            <td colspan="1">Way Left</td>
+            <td colspan="3">
+                <div class="center-col middle-up">Middle Up</div>
+                <div class="center-col middle-down">Middle Down</div>
+            </td>
+            <td colspan="1">Way Right</td>
+        </tr>
+        <tr class="center-row">
+            <td colspan="1"></td>
+            <td class="center-col" colspan="1"></td>
+            <td class="center-col" colspan="1"></td>
+            <td class="center-col" colspan="1"></td>
+            <td colspan="1"></td>
+        </tr>
+        <tr>
+            <th colspan="5"></th>
+        </tr>
+        <tr>
+            <th colspan="5"></th>
+        </tr>
     </table>
-  </body>
+</body>
 </html>
