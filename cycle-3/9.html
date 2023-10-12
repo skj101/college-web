@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Cycle 3</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="description" content="" />
+      <link rel="icon" href="favicon.png">
+      <style>
+         *{
+         margin: 0;
+         box-sizing: border-box;
+         }
+         img {
+         height: 100vh;        
+         width: 100%;
+         object-fit: contain;
+         }
+         .image_wrapper {
+         position: relative;
+         overflow: hidden;
+         color: aliceblue;
+         }
+         .overlay {
+         position: absolute; 
+         inset: 0;
+         background-color: black;
+         opacity: 70%;
+         display: grid;
+         place-items: center;
+         }
+         .centerItems {
+         display: grid;
+         gap: 5px;
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body class="image_wrapper">
+      <img src="https://media2.giphy.com/media/oa4Au5xDZ6HJYF6KGH/200w.webp" alt="" />
+      <div class="overlay">
+         <div class="centerItems">
+            <h1>Heading</h1>
+            <h3>Position absolute place this heading on top of the image</h3>
+         </div>
+      </div>
+   </body>
+</html>

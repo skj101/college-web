@@ -1,0 +1,13 @@
+/* for cycle3 - 17 */
+.wrapper17{
+    display: grid;
+    gap: 5px;
+}
+.wrapper17 > h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: blue;
+}
+.wrapper17 > p {
+    color: rgb(32, 32, 59);
+}
