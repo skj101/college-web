@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 30px;;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    margin: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+form { 
+    display: grid;
+    gap: 20px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+

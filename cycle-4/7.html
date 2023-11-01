@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Colorful Text Area</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid">
+    <h1>Colorful Text Area Generator</h1>
+
+    <form onsubmit="generateTextArea(event)" class="inline">
+        <input type="color" id="colorInput" required>
+        <button type="submit">Generate Text Area</button>
+    </form>
+
+    <div id="textAreaContainer" style="display: none">
+        <textarea id="colorfulTextArea" placeholder="Type your text here..."></textarea>
+    </div>
+
+    <script>
+        function generateTextArea(event) {
+            event.preventDefault();
+            var colorInput = document.getElementById('colorInput').value;
+            var colorfulTextArea = document.getElementById('colorfulTextArea');
+            colorfulTextArea.style.color = colorInput;
+
+            var textAreaContainer = document.getElementById('textAreaContainer');
+            textAreaContainer.style.display = 'block';
+        }
+
+        function changeColor() {
+            var colorInput = document.getElementById('colorInput').value;
+            var colorfulTextArea = document.getElementById('colorfulTextArea');
+            colorfulTextArea.style.color = colorInput;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Age Calculator</title>
+   <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="dialog">
+            <h2>Enter Your Information</h2>
+            <form onsubmit="calculateAge(event)">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="date" id="dob" required>
+                <button type="submit">Check</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p id="ageResult"></p>
+        <button onclick="openDialog()">Check Again</button>
+    </div>
+</body>
+</html>
+
